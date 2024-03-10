@@ -9,7 +9,6 @@ class ConfigBotWeather:
 # get these from my.telegram.org
 api_id = ""
 api_hash = ""
-# ----
 bot_token = "" # get from bot father in telegram
 
 apiKey_openweatherMap = "" # get it from https://openweathermap.org/ 

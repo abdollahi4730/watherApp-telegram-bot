@@ -3,7 +3,6 @@ from requests import get
 from pyrogram import Client , filters
 from config import ConfigBot
 
-
 class Weather :
         def convert_K_to_C(self , k):
             return (float(k) - 273.15)
@@ -32,8 +31,7 @@ class Weather :
                           "message" : "city not found"
                     }
 
-# nameCity = input("Enter name of your city: ")
-                    
+                  
 client = Client( "weather", api_id= ConfigBot.API_ID , api_hash= ConfigBot.API_HASH ,bot_token= ConfigBot.BOT_TOKEN)
 
 @client.on_message(filters.private)
@@ -56,8 +54,5 @@ async def render(Client , message ):
         else:
             mess = f'**error : {dataWeatherCity["code"]} \n{dataWeatherCity["message"]}**'
             await client.send_message(message.chat.id , mess)
-    # await message.reply("just a test")
-    #   print("hello")
+
 client.run()
-# WeathersCity = Weather(nameCity="mashhad")
-# print(WeathersCity.dataWeatherCity)
