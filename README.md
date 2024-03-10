@@ -1,4 +1,4 @@
-** You can understand the weather of all cities now. **
+* You can understand the weather of all cities now. *
 
 how to start?
 first download source code. then install python3 . then open cmd and write:
