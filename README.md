@@ -2,6 +2,7 @@
 
 how to start?
 first download source code. then install python3 . then open cmd and write:
+
 `pip install requirements.txt `
 then open config.py and fill value of variable.
 
